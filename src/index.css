@@ -79,14 +79,7 @@ code {
 .error {
   font-size: 4em;
   width: fit-content;
-  background-image: linear-gradient(
-    60deg,
-    #102550,
-    rgb(255, 253, 253),
-    #74091b
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: blue;
 }
 
 .guide {
