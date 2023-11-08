@@ -12,9 +12,6 @@ code {
 }
 
 .navbarTitle {
-  background-image: linear-gradient(60deg, #1f438b, white, #c9102e);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-size: 2rem;
 }

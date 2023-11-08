@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import { useGlobalContext } from "../context";
-import CustomizedMenus from "../components//Menu";
-import Playerbox from "../components/Playerbox";
-import Table from "../components/Table";
+import CustomizedMenus from "./Menu";
+import Playerbox from "./Playerbox";
+import Table from "./Table";
 
 const Mainpage = () => {
   const { isLoading, isError, fetchPlayerData, isPlayerFound } =

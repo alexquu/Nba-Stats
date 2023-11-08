@@ -29,7 +29,7 @@ const Navbar = () => {
         }}
       >
         <section className={`${isTitleOpen ? "navbarTitle" : "hideTitle"}`}>
-          NBA STATS
+          <span style={{color: "blue"}}>NBA</span> <span style={{color: "red"}}>STATS</span>
         </section>
         <form
           className={`${!isMinibarOpen ? "searchBar" : "miniBar"}`}
