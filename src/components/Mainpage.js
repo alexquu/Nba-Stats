@@ -22,7 +22,6 @@ const Mainpage = () => {
             <h4 className="subtitle">
               Season averages for the player you want.
             </h4>
-            <p className="anchorEl">Ciao</p>
           </section>
           {!isPlayerFound ? (
             <h3 className="guide">

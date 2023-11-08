@@ -21,11 +21,11 @@ const Navbar = () => {
       <AppBar
         sx={{
           display: "flex",
-          backgroundColor: "rgb(25, 25, 25)",
+          backgroundColor: "#0A0708",
           flexDirection: "row",
           justifyContent: "space-around",
           position: "sticky",
-          padding: "0.5rem",
+          padding: "0.7rem",
         }}
       >
         <section className={`${isTitleOpen ? "navbarTitle" : "hideTitle"}`}>
@@ -35,13 +35,13 @@ const Navbar = () => {
           className={`${!isMinibarOpen ? "searchBar" : "miniBar"}`}
           onSubmit={handleSubmit}
         >
-          <SearchIcon sx={{ fontSize: "2rem" }} />
+          <SearchIcon sx={{ fontSize: "2rem", padding: "0.2rem" }} />
           <InputBase
             type="text"
             id="playerInput"
             name="playerInput"
             placeholder="Search a player"
-            sx={{ input: { color: "white" } }}
+            sx={{ input: { color: "#B1B1B1" }, backgroundColor: "" }}
             value={playerName}
             onChange={(e) => setPlayerName(e.target.value)}
           />

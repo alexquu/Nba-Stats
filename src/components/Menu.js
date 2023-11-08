@@ -58,18 +58,18 @@ const CustomizedMenus = () => {
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
-          backgroundColor: "rgb(230, 216, 216);",
-          border: "1px solid rgb(25, 25, 25);",
+          backgroundColor: "rgb(208, 209, 209);",
+          border: "2px solid rgb(25, 25, 25);",
           color: "rgb(25, 25, 25);",
           fontSize: "1em",
           "&:hover": {
-            backgroundColor: "rgb(72,71,71)",
+            backgroundColor: "#444444",
             color: "white",
-            border: "1px solid rgb(72,71,71)",
+            border: "2px solid rgb(72,71,71)",
           },
         }}
       >
-        <p className="season">Choose a season to display:</p>
+        <p>Choose a season to display:</p>
       </Button>
       <StyledMenu
         anchorEl={anchorEl}
