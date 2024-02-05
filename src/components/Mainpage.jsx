@@ -14,7 +14,7 @@ const Mainpage = () => {
   }, []);
 
   return (
-    <main>
+    <main className="">
       {!isLoading && !isError ? (
         <>
           <Navbar />
@@ -29,7 +29,7 @@ const Mainpage = () => {
               bar above.
             </h3>
           ) : (
-            <div className="infoContainer">
+            <div className="pageContainer infoContainer">
               <Playerbox />
               <CustomizedMenus />
               <Table />

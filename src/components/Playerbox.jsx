@@ -102,7 +102,7 @@ const Playerbox = () => {
   };
 
   return (
-    <div>
+    <div className="pageContainer">
       <Box className="player">
         <div className="logo">{renderLogo(teamLogo)}</div>
         {player[0].first_name}&nbsp;{player[0].last_name}

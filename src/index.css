@@ -1,9 +1,19 @@
+html {
+  background: linear-gradient(
+    -100deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  height: 100vh;
+}
+
 body {
-  margin: 0; 
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #B1B1B1;
+  height: 100%;
 }
 
 code {
@@ -11,9 +21,22 @@ code {
     monospace;
 }
 
+.pageContainer {
+  width: 100%;
+  max-width: 80em;
+  margin: auto;
+  /* border: 1px solid white; */
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .navbarTitle {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .hideTitle {
@@ -22,8 +45,7 @@ code {
 
 .subTitleContainer {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #444444;
   padding: 0.5rem;
   box-shadow: 1px 5px 2px rgb(139, 139, 139);
@@ -84,8 +106,6 @@ code {
 
 .guide {
   text-align: center;
-  display: flex;
-  justify-content: center;
   width: fit-content;
   margin: 0 auto;
   margin-top: 25vh;
@@ -95,8 +115,11 @@ code {
 }
 
 .noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2.5em;
-  margin-top: 3em;
+  margin-top: 5em;
 }
 
 .infoContainer {
@@ -125,8 +148,9 @@ code {
   font-weight: bolder;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 1em 1em;
+  padding: 1em;
   /* border: 1px solid rgb(25, 25, 25); */
 }
 
@@ -149,10 +173,6 @@ code {
   .subtitle {
     justify-content: center;
     font-size: 1rem;
-    margin: 0 -20px;
-  }
-  .navbarTitle {
-    margin-right: 180px;
   }
   .load {
     font-size: 3em;
@@ -168,7 +188,6 @@ code {
   }
   .noData {
     font-size: 1.5em;
-    margin-top: 5em;
   }
 }
 
@@ -185,9 +204,6 @@ code {
   .anchorEl {
     display: none;
   }
-  .noData {
-    margin-top: 8em;
-  }
 }
 
 @media screen and (max-width: 450px) {
@@ -203,9 +219,6 @@ code {
   }
   .noData {
     font-size: 1em;
-  }
-  .infoContainer {
-    margin-top: 5em;
   }
   .subTitleContainer {
     font-size: 0.9em;

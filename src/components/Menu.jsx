@@ -80,7 +80,11 @@ const CustomizedMenus = () => {
         {seasons
           .map((el) => (
             <MenuItem
-              sx={{ fontSize: "1em", width: ["16.5rem", "19.5rem"] }}
+              sx={{
+                fontSize: "1em",
+                width: ["19em"],
+                padding: "1em",
+              }}
               key={el}
               onClick={() => {
                 setSelectedSeason(el);
